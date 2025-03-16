@@ -19,6 +19,10 @@ This foundational work sets the stage for subsequent milestones, where the data 
     -- schemas.py contains the schemas for the different data feeds
     -- functions.py contains all helper functions used in the code such as functions to generate data and serialize data
     -- main.py here the main application is run, here all the functions are called
+    -- schemas_json is a folder containing 3 json files, one for each schema respectively
+    -- serialized_data is a folder containing the end result (the result of running the main function)
+        -- It contains 3 avro files for the three types of events respectively (driver, passenger and pricing)
+        -- In these files data is already serialized
 -- Whenever a change is made to a schema in the schemas.py file, the file must be run in order for the json files to be updated
     -- WHY? Well, this improves security, it makes sure there is an extra step before changing the json objects. (However, this data security aspect can still be improved)
 -- Make sure to have installed the required packages
